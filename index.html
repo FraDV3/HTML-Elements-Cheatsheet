@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,400;0,800;1,400&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Title -->
+
+    <h1 id="title">HTML Elements</h1>
+    
+    <!-- Table -->
+
+    <table id= "table">
+        <thead>
+            <th class= "elem onecol">Elements</th>
+            <th>Description</th>
+            <th>Example</th>
+            <th>Rendering</th>        
+        </thead>
+
+        <!-- Body -->
+        <tr>
+            <td class="elements onecol">&lt;<span class="greenelements">body</span>&gt;</td>
+            <td class= "twocol">Content of an <em>HTML Document</em></td>
+            <td class="exemple">
+                &lt;<span class="greenelements">body</span>&gt;<br>
+                &lt;<span class="greenelements">h1</span>&gt;Hello World&lt;/<span class="greenelements">h1</span>&gt;<br>
+                &lt;/<span class="greenelements">body</span>&gt;
+            </td>
+            <td><body><h1>Hello World</h1></body></td>
+        </tr>
+        <!-- h1/h6 -->
+        <tr>
+            <td class="elements onecol">&lt;<span class="greenelements">h1</span>&gt;-&lt;<span class="greenelements">h6</span>&gt;</td>
+            <td class= "twocol">Heading Elements from h1 to h6 differ in size</td>
+            <td class="exemple">
+                &lt;<span class="greenelements">h1</span>&gt;Hello World&lt;/<span class="greenelements">h1</span>&gt;<br>
+                &lt;<span class="greenelements">h2</span>&gt;1st Subheading&lt;/<span class="greenelements">h2</span>&gt;<br>
+                <span>...</span><br>
+                &lt;<span class="greenelements">h6</span>&gt;5th Subheading&lt;/<span class="greenelements">h6</span>&gt;
+            </td>
+            <td>
+                <h1>Hello World</h1>
+                <h2>1st Subheading</h2>
+                <h3>...</h3>
+                <h6>5th Subheading</h6>
+            </td>
+        </tr>
+        <!-- p -->
+        <tr>
+            <td class="elements onecol">&lt;<span class="greenelements">p</span>&gt;</td>
+            <td class= "twocol">Contains and displays a block of text</td>
+            <td class="exemple">
+                &lt;<span class="greenelements">p</span>&gt;Lorem ipsum dolor sit amet...&lt;/<span class="greenelements">p</span>&gt;<br>
+            </td>
+            <td><p>Lorem ipsum dolor sit amet...</p></td>
+        </tr>
+        <!-- span -->
+        <tr>
+            <td class="elements onecol">&lt;<span class="greenelements">span</span>&gt;</td>
+            <td class= "twocol">Inline container for text (styling purposes)</td>
+            <td class="exemple">
+                &lt;<span class="greenelements">p</span>&gt;<span class="greenelements">&lt;span&gt;</span>This text<span class="greenelements">&lt;/span&gt;</span> has a blue color&lt;/<span class="greenelements">p</span>&gt;<br>
+            </td>
+            <td><p><span class="bluetext">This text</span> has a blue color</p></td>
+        </tr>
+        <!-- em -->
+        <tr>
+            <td class="elements onecol">&lt;<span class="greenelements">em</span>&gt;</td>
+            <td class= "twocol">Emphasizes <em>(Italicizes)</em> the text</td>
+            <td class="exemple">
+                &lt;<span class="greenelements">p</span>&gt;The word<span class="greenelements">&lt;em&gt;</span>Italics<span class="greenelements">&lt;/em&gt;</span> is emphasized in Italics&lt;/<span class="greenelements">p</span>&gt;<br>
+            </td>
+            <td><p>The word <em>Italics</em> is emphasized in Italics</p></td>
+        </tr>
+        <!-- strong -->
+        <tr>
+            <td class="elements onecol">&lt;<span class="greenelements">strong</span>&gt;</td>
+            <td class= "twocol">Highlights text using <strong>Bold Weight</strong></td>
+            <td class="exemple">
+                &lt;<span class="greenelements">p</span>&gt;The word<span class="greenelements">&lt;strong&gt;</span>Bold<span class="greenelements">&lt;/strong&gt;</span> has a bold font wieght&lt;/<span class="greenelements">p</span>&gt;<br>
+            </td>
+            <td><p>The word <strong>Bold</strong> has a bold font wieght</p></td>
+        </tr>
+        <!-- br -->
+        <tr>
+            <td class="elements onecol">&lt;<span class="greenelements">br</span>&gt;</td>
+            <td class= "twocol">Creates a line break</td>
+            <td class="exemple">
+                &lt;<span class="greenelements">p</span>&gt;Lorem ipsum dolor sit amet,&lt;/<span class="greenelements">br</span>&gt;<br>consectetur adipisci elit,&lt;/<span class="greenelements">br</span>&gt;<br>sed do eiusmod tempor...&lt;/<span class="greenelements">p</span>&gt;<br>
+            </td>
+            <td><p>Lorem ipsum dolor sit amet,</br>
+                consectetur adipisci elit,</br>
+                sed do eiusmod tempor...</p></td>
+        </tr>
+        <!-- div -->
+        <tr>
+            <td class="elements onecol">&lt;<span class="greenelements">div</span>&gt;</td>
+            <td class= "twocol">Container that divides an <em>HTML Document</em> in sections</td>
+            <td class="exemple">
+                &lt;<span class="greenelements">div</span>&gt;Section 1&lt;/<span class="greenelements">div</span>&gt;<br>
+                &lt;<span class="greenelements">div</span>&gt;Section 2&lt;/<span class="greenelements">div</span>&gt;<br>
+                &lt;<span class="greenelements">div</span>&gt; ... &lt;/<span class="greenelements">div</span>&gt;
+            </td>
+            <td>
+                <div>Section 1</div>
+                <div>Section 2</div>
+                <div> ... </div>
+            </td>
+        </tr>
+        <!-- img -->
+        <tr>
+            <td class="elements onecol">&lt;<span class="greenelements">img</span>&gt;</td>
+            <td class= "twocol">Embedes Images in the document</td>
+            <td class="exemple">
+                &lt;<span class="greenelements">img</span><span class="ocratext"> src= "image.png"</span>&gt;
+            </td>
+        </tr>
+        <!-- video -->
+        <tr>
+            <td class="elements onecol">&lt;<span class="greenelements">video</span>&gt;</td>
+            <td class= "twocol">Embedes a media player for video playback</td>
+            <td class="exemple">
+                &lt;<span class="greenelements">video</span><span class="ocratext"> src= "video.mp4" controls</span>&gt;<span> Video not supported </span>&lt;/<span class="greenelements">video</span>&gt;
+            </td>
+        </tr>
+        <!-- ol -->
+        <tr>
+            <td class="elements onecol">&lt;<span class="greenelements">ol</span>&gt;</td>
+            <td class= "twocol">Ordered list of items</td>
+            <td class="exemple">
+                &lt;<span class="greenelements">ol</span>&gt;<br>
+                &lt;<span class="greenelements">li</span>&gt;Hello World 1&lt;/<span class="greenelements">li</span>&gt;<br>
+                &lt;<span class="greenelements">li</span>&gt;Hello World 2&lt;/<span class="greenelements">li</span>&gt;<br>
+                &lt;<span class="greenelements">li</span>&gt;Hello World 3&lt;/<span class="greenelements">li</span>&gt;<br>
+                &lt;/<span class="greenelements">ol</span>&gt;
+            </td>
+            <td>
+                <ol>
+                    <li>Hello World 1</li>
+                    <li>Hello World 2</li>
+                    <li>Hello World 3</li>
+                </ol>
+            </td>
+        </tr>
+        <!-- ul -->
+        <tr>
+            <td class="elements onecol">&lt;<span class="greenelements">ul</span>&gt;</td>
+            <td class= "twocol">Unordered list of items</td>
+            <td class="exemple">
+                &lt;<span class="greenelements">ul</span>&gt;<br>
+                &lt;<span class="greenelements">li</span>&gt;Hello World 1&lt;/<span class="greenelements">li</span>&gt;<br>
+                &lt;<span class="greenelements">li</span>&gt;Hello World 2&lt;/<span class="greenelements">li</span>&gt;<br>
+                &lt;<span class="greenelements">li</span>&gt;Hello World 3&lt;/<span class="greenelements">li</span>&gt;<br>
+                &lt;/<span class="greenelements">ul</span>&gt;
+            </td>
+            <td>
+                <ul>
+                    <li>Hello World 1</li>
+                    <li>Hello World 2</li>
+                    <li>Hello World 3</li>
+                </ul>
+            </td>
+        </tr> 
+    </table>
+    <br>
+    <footer>Edited by <em>Francesco De Vivo</em></footer>
+</body>
+</html>
